@@ -1,5 +1,3 @@
-package Week3_Java_Lab;
-
 class Employee {
     private String employeeName;
     private int employeeId;
@@ -65,7 +63,6 @@ class FullTimeEmployee extends Employee {
         System.out.println("Annual Bonus: " + this.annualBonus);
     }
 
-    @Override
     public double calculateSalary() {
         return this.getBaseSalary() + this.annualBonus;
     }
@@ -96,7 +93,6 @@ class PartTimeEmployee extends Employee {
         System.out.println("Hourly Rate: " + this.hourlyRate);
     }
 
-    @Override
     public double calculateSalary() {
         return this.getBaseSalary() + (this.hoursWorked * this.hourlyRate);
     }
@@ -118,9 +114,9 @@ class Intern extends Employee {
 
 public class U2310088Lab3 {
     public static void main(String[] args) {
-        FullTimeEmployee fullTimeEmp = new FullTimeEmployee("John Doe", 101, 50000, 10000);
-        PartTimeEmployee partTimeEmp = new PartTimeEmployee("Jane Smith", 102, 15000, 20, 45.0);
-        Intern intern = new Intern("Sam Brown", 103, 5000, "XYZ University");
+        FullTimeEmployee fullTimeEmp = new FullTimeEmployee("Nurmuhammad", 101, 50000, 10000);
+        PartTimeEmployee partTimeEmp = new PartTimeEmployee("Dilshod", 102, 15000, 20, 45.0);
+        Intern intern = new Intern("Abror", 103, 5000, "Inha University");
 
         System.out.println("\nFull-Time Employee Details:");
         fullTimeEmp.displayEmployeeDetails();
